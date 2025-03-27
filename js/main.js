@@ -43,7 +43,7 @@ async function renderView(viewType) {
     `
   } else if (viewType === 'vertical') {
     content.innerHTML = `
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 gap-6">
         ${productData.map(product => `
           <div class="p-4 border border-gray-300 rounded-lg shadow bg-white">
             <img src="${product.image}" class="w-full h-40 object-contain mb-3">
