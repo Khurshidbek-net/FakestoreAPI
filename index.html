@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Fake Store</title>
+</head>
+
+<body class="flex flex-col items-center min-h-screen bg-gray-100 p-6">
+  <h2>Fake Store</h2>
+
+  <div class="mb-4 flex space-x-4">
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="view" value="table" checked onclick="renderView('table')"
+        class="form-radio text-blue-500">
+      <span>Table View</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="view" value="vertical" onclick="renderView('vertical')"
+        class="form-radio text-green-500">
+      <span>Vertical Cards</span>
+    </label>
+    <label class="flex items-center space-x-2">
+      <input type="radio" name="view" value="horizontal" onclick="renderView('horizontal')"
+        class="form-radio text-purple-500">
+      <span>Horizontal Cards</span>
+    </label>
+  </div>
+
+  <div id="content" class="w-full max-w-6xl bg-white shadow-lg rounded-lg p-6">
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
